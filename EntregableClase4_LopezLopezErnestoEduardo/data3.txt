@@ -1,0 +1,128 @@
+[
+	{
+		"id": 1,
+		"nombre": "Rick Sanchez",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 2,
+		"nombre": "Morty Smith",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 3,
+		"nombre": "Summer Smith",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 4,
+		"nombre": "Beth Smith",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 5,
+		"nombre": "Jerry Smith",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 6,
+		"nombre": "Abadango Cluster Princess",
+		"estado": "Alive",
+		"especie": "Alien"
+	},
+	{
+		"id": 7,
+		"nombre": "Abradolf Lincler",
+		"estado": "unknown",
+		"especie": "Human"
+	},
+	{
+		"id": 8,
+		"nombre": "Adjudicator Rick",
+		"estado": "Dead",
+		"especie": "Human"
+	},
+	{
+		"id": 9,
+		"nombre": "Agency Director",
+		"estado": "Dead",
+		"especie": "Human"
+	},
+	{
+		"id": 10,
+		"nombre": "Alan Rails",
+		"estado": "Dead",
+		"especie": "Human"
+	},
+	{
+		"id": 11,
+		"nombre": "Albert Einstein",
+		"estado": "Dead",
+		"especie": "Human"
+	},
+	{
+		"id": 12,
+		"nombre": "Alexander",
+		"estado": "Dead",
+		"especie": "Human"
+	},
+	{
+		"id": 13,
+		"nombre": "Alien Googah",
+		"estado": "unknown",
+		"especie": "Alien"
+	},
+	{
+		"id": 14,
+		"nombre": "Alien Morty",
+		"estado": "unknown",
+		"especie": "Alien"
+	},
+	{
+		"id": 15,
+		"nombre": "Alien Rick",
+		"estado": "unknown",
+		"especie": "Alien"
+	},
+	{
+		"id": 16,
+		"nombre": "Amish Cyborg",
+		"estado": "Dead",
+		"especie": "Alien"
+	},
+	{
+		"id": 17,
+		"nombre": "Annie",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 18,
+		"nombre": "Antenna Morty",
+		"estado": "Alive",
+		"especie": "Human"
+	},
+	{
+		"id": 19,
+		"nombre": "Antenna Rick",
+		"estado": "unknown",
+		"especie": "Human"
+	},
+	{
+		"id": 20,
+		"nombre": "Ants in my Eyes Johnson",
+		"estado": "unknown",
+		"especie": "Human"
+	},
+	{
+		"nombre": "Evil Morty",
+		"especie": "Evil Human",
+		"estado": "Alive",
+		"id": 21
+	}
+]
