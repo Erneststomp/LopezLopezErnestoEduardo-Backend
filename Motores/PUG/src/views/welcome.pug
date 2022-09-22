@@ -1,0 +1,19 @@
+html
+    head 
+        title="pug"
+    body
+        a(href='/users')
+            button
+                p View all Characters
+        form(role='form' method='POST' action='/')
+            label(for="name") Name:
+                input(type="text", name='title')
+            label(for="price") Reward:
+                input(type="number", name='price')  
+            label(for="especie") Species:
+                input(type="text", name='especie')
+            label(for="thumbnail") Image URL:
+                input(type="text", name='thumbnail')  
+            a
+                button(type='submit')
+                    p Add Character

@@ -1,0 +1,9 @@
+html
+    head 
+        title="pug"
+    body
+        a(href='/')
+            button
+                p Back
+        each elem,i in characters
+            p !{elem.id}-Name:!{elem.title}-Reward:!{elem.price}- Picture:!{elem.thumbnail}    

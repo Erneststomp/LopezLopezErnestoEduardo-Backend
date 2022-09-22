@@ -1,0 +1,148 @@
+[
+	{
+		"id": 1,
+		"title": "Rick Sanchez",
+		"price": 121,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 2,
+		"title": "chanchitofeliz",
+		"price": 120,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 3,
+		"title": "Summer Smith",
+		"price": 123,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 4,
+		"title": "Beth Smith",
+		"price": 142,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 5,
+		"title": "Jerry Smith",
+		"price": 152,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 6,
+		"title": "Abadango Cluster Princess",
+		"price": 162,
+		"especie": "Alien",
+		"thumbnail": " "
+	},
+	{
+		"id": 7,
+		"title": "Abradolf Lincler",
+		"price": 34456,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 8,
+		"title": "Adjudicator Rick",
+		"price": 343,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 9,
+		"title": "Agency Director",
+		"price": 45,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 10,
+		"title": "Alan Rails",
+		"price": 65,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 11,
+		"title": "Albert Einstein",
+		"price": 76,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 12,
+		"title": "Alexander",
+		"price": 43,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 13,
+		"title": "Alien Googah",
+		"price": 34,
+		"especie": "Alien",
+		"thumbnail": " "
+	},
+	{
+		"id": 14,
+		"title": "Alien Morty",
+		"price": 54,
+		"especie": "Alien",
+		"thumbnail": " "
+	},
+	{
+		"id": 15,
+		"title": "Alien Rick",
+		"price": 45,
+		"especie": "Alien",
+		"thumbnail": " "
+	},
+	{
+		"id": 16,
+		"title": "Amish Cyborg",
+		"price": 45,
+		"especie": "Alien",
+		"thumbnail": " "
+	},
+	{
+		"id": 17,
+		"title": "Annie",
+		"price": 12,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 18,
+		"title": "Antenna Morty",
+		"price": 12,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"id": 19,
+		"title": "Antenna Rick",
+		"price": 765,
+		"especie": "Human",
+		"thumbnail": " "
+	},
+	{
+		"title": "chanchitofeliz",
+		"id": 20,
+		"price": 120,
+		"thumbnail": ""
+	},
+	{
+		"title": "asdasdasd",
+		"price": "2",
+		"especie": "asdasd",
+		"thumbnail": "asdasd",
+		"id": 21
+	}
+]
