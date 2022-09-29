@@ -26,24 +26,5 @@ export class Characters{
             }
         }
 
-}
-
-export class Messages{
-
-    getAllmessages =async()=>{
-        const response =  await fs.promises.readFile('./src/public/data/data2.json','utf-8');
-        return JSON.parse(response)
-    }    
-
-    SaveMessage = async(newObject1) =>{
-
-            const response =  await fs.promises.readFile('./src/public/data/data2.json','utf-8');
-            let data=JSON.parse(response)  
-          
-                data.push(newObject1);
-                await fs.promises.writeFile('./src/public/data/data2.json', JSON.stringify(data, null, '\t'))
-            
-        
-    }
-}
+} 
 
