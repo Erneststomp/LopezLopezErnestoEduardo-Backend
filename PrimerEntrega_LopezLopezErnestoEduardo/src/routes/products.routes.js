@@ -1,5 +1,7 @@
 import { Router } from "express"
 import { Characters } from '../public/data/manager.js';
+import {adminAuth} from '../midleware/SecurityManager.js'
+
 const Contenedor = new Characters();
 
 const router=Router();
@@ -21,7 +23,7 @@ let allCharacters = await Contenedor.getAll()
 
     })  
 
-    router.post('/',(req,res)=>{
+    router.post('/',adminAuth,(req,res)=>{
         let newTitle  = req.body.title
         let newPrice = req.body.price
         let ids = allCharacters.map(object => {
@@ -37,7 +39,20 @@ let allCharacters = await Contenedor.getAll()
         res.send({title:newTitle,id:newId,price:newPrice})
     })
 
-    router.delete('/:id',(req,res)=>{
+    router.put('/',adminAuth,(req,res)=>{
+        let idProduct=parseInt(req.body.id);
+        let stockProduct=parseInt(req.body.stock);
+        let priceProduct=parseInt(req.body.price);
+        let currentPokemon=allCharacters.find(object =>object.id===idProduct);
+        currentPokemon.stock=stockProduct
+        currentPokemon.price=priceProduct
+        Contenedor.SaveCharacter1(allCharacters)
+        res.send(currentPokemon)
+    })
+
+
+
+    router.delete('/:id',adminAuth,(req,res)=>{
         let ids = allCharacters.map(object => {
             return object.id;
           });

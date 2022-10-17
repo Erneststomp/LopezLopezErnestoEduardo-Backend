@@ -76,11 +76,8 @@ let allPokemons = await Pokemons.getAll()
         if(!ids.includes(idCart)) return res.status(400).send("The selected cart was deleted, please choose another cart or create a new one")
         if(!Pokeids.includes(idProduct)) return res.status(400).send("The pokemon you are tying to select couldn't be found, verify the information")
         if(ammountProduct<1)return res.status(400).send("You must add a quantity superior to 1")
-        
-
-
         let currentCart=allCarts.find(object =>object.id===idCart);
-        console.log(currentCart)
+        let currentPokemon=allPokemons.find(object =>object.id===idProduct);
         let PokeinCurentCart = currentCart.products.map(object => {
             return object.id;
         });
@@ -92,11 +89,12 @@ let allPokemons = await Pokemons.getAll()
            currentCart.products.forEach(element => {
             if(element.id===idProduct){
                 element.ammount=ammountProduct+element.ammount
-                console.log(element.ammount)
             }
            });
+           currentPokemon.stock=currentPokemon.stock-ammountProduct
         }
         Contenedor.SaveCharacter1(allCarts)
+        Pokemons.SaveCharacter1(allPokemons)
         res.send(currentCart)
     })       
  
