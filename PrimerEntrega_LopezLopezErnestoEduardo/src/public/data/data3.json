@@ -6,8 +6,8 @@
 		"description": "Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.",
 		"code": "15fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
-		"price": 120,
-		"stock": 999
+		"price": 123,
+		"stock": 678
 	},
 	{
 		"id": 2,

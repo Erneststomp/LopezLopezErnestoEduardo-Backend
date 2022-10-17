@@ -24,4 +24,4 @@ app.use('/api',mainRouter)
 
 app.get('/',(req,res)=>{
     res.send("<h1>Bienvenido a Express</h1>")
-})
+})  
