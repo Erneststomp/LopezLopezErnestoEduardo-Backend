@@ -5,7 +5,7 @@ export const mariaDBOptions = {
         user:"root",
         password:"",
         port:'3306',
-        database:'my_knex',
+        database:'Knex_Prueba',
         ssl: false        
     }
 }

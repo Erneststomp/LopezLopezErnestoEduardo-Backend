@@ -27,6 +27,7 @@ app.use('/',viewsRouter);
 app.use(express.static(__dirname+'/public'));
 
 io.on('connection', socket=>{
+
     socket.on('messagereq',async()=>{
         const log= await Messages1.getAllMessages();
         io.emit('log',log)
@@ -40,7 +41,11 @@ io.on('connection', socket=>{
     
     socket.on('Charreq',async()=>{
         const logchar = await Characters.getAllProduct()
-        if(logchar.length == 0) await Characters.createInitialProducts()
+        if(logchar.length == 0) {
+            let initialProducts =await fs.promises.readFile('./src/public/data/data3.json','utf-8');
+            initialProducts=JSON.parse(initialProducts)
+            await Characters.addNewProduct(initialProducts[0])
+        }
         io.emit('logchar',logchar)
     })
 

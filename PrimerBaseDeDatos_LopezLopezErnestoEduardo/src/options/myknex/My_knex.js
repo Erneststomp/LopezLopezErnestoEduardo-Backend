@@ -1,7 +1,4 @@
 import knex from 'knex';
-import fs from 'fs';
-
-let initialProducts =await fs.promises.readFile('./src/public/data/data3.json','utf-8');
 
 export class SqlClient {
     constructor(config, items) {
@@ -36,9 +33,9 @@ export class SqlClient {
         }
       }
 
-
       save= async(object) =>{
         try {
+          console.log(object)
           return this.knex(this.items).insert(object)
                   .then(()=> console.log({Method:'save= async(object) ',Description:`Table ${this.items} insert successfully`}))
                   .catch(error => console.log({Method:'save= async(object) ',Server: error}))
@@ -64,22 +61,7 @@ export class SqlClient {
           console.log({Method:'getAll()',Server: error})
         }
       }
-
-      createInitialProducts = async() => {
-        try {
-            console.log('hasta aqui todo bien')
-            console.log(this.items)
-            console.log(initialProducts)
-            await this.knex(this.items).insert(initialProducts)
-            console.log('aqui ya no')
-                    .then(()=> console.log({Method:'createinitialproducts= async(object) ',Description:`Table ${this.items} insert successfully`}))
-                    .catch(error => console.log({Method:'createinitialproducts= async(object) ',Server: error}))
-                    .finally(()=> this.knex.destroy());        
-          } catch (error) {
-            console.log({Method:'createinitialproducts= async(object) ',Server: error})
-          }
-      }
- 1
+ 
       close() {
         this.knex.destroy()
           .then(()=> console.log({Method:'close()',Description:`destroy() connection for Table ${this.items} successfully`}))
@@ -89,4 +71,4 @@ export class SqlClient {
 
   }
 
-export default SqlClient;
+export default SqlClient; 

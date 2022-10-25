@@ -11,14 +11,6 @@ const Characters = {
       console.log({Server: error})
     }
   }, 
-  createInitialProducts: async() => {
-    try {
-        database = new KnexContainer(config, 'characters')
-        await database.createInitialProducts()     
-    } catch (error) {
-      console.log({Server: error})
-    }
-  }, 
 
   getAllProduct: async () => {
     try {
@@ -42,6 +34,8 @@ const Characters = {
         price: product.price,
         thumbnail: product.thumbnail,
       }
+      console.log('newProduct')
+      console.log(newProduct)
       database = new KnexContainer(config, 'characters')         
       await database.save(newProduct)
     } catch (error) {
