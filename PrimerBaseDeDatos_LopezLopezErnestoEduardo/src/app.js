@@ -46,7 +46,7 @@ io.on('connection', socket=>{
             initialProducts=JSON.parse(initialProducts)
             await Characters.addNewProduct(initialProducts[0])
         }
-        io.emit('logchar',logchar)
+        io.emit('logchar',logchar) 
     })
 
     socket.on('characters',async(datachar)=>{
