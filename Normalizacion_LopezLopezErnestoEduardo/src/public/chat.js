@@ -1,4 +1,7 @@
-import { denormalize } from "normalizr";
+const {denormalize , schema}=window.normalizr
+const author = new schema.Entity('authors')
+const message = new schema.Entity('messages',{author:author})
+const chat = new schema.Entity('chat',{author:author,content:[message]})
 const socket=io(
     {autoConnect:false}
 );
@@ -47,7 +50,7 @@ const socket=io(
                   return [email,name,lastname,age,avatar,alias]
                 }
               })
-      
+       
                 if (formValues) {
                     
                     if (formValues[0]!==''&&formValues[1]!==''&&formValues[2]!==''&&formValues[3]!==''&&formValues[4]!==''&&formValues[5]!==''){
@@ -110,18 +113,16 @@ ChatBox.addEventListener('keyup',evt=>{
 
 socket.on('log',data=>{
     let log=document.getElementById('log_chat')
-    let log2=document.getElementById('log_ref')
-    console.log(data)
     let data1=denormalize(data.result,chat,data.entities)
     console.log(data1)
-    let messages=''
-    let compresion=''
+    console.log(data)
+    let messages=`<div ><p style="width:35px">no normalizado:${ (new TextEncoder().encode(JSON.stringify(data))).length}</p>
+    <p style="color:brown"> normalizado: ${ (new TextEncoder().encode(JSON.stringify(data1))).length} </p> </div>`
+    
     for(let i=0;i<data1.content.length;i++){
         messages=messages+`<div style="display:inline-flex"><img style="width:35px" src="${data1.content[i].author.avatar}">  </img><p style="color:brown"> ${data1.content[i].date} </p> <p style="color:blue; font-weight:bold"> ${data1.content[i].author.alias} </p> <p style="font-style: italic;color:green"> ${data1.content[i].message}</p></div><br>`
     }
-    compresion=compresion+`<div style="display:inline-flex"><p style="width:35px" src="no normalizado:${JSON(data1,null,'\t')}"> </p><p style="color:brown"> normalizado: ${JSON(data,null,'\t')} </p> </div>`
     log.innerHTML=messages;
-    log2.innerHTML=compresion;
     
 })
 

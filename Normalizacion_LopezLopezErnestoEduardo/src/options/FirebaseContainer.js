@@ -66,6 +66,8 @@ const FirebaseContainer = {
             author:author,
             content:[message]
         })
+        console.log(chat)
+ 
         
         const normalizeData=normalize(response,chat)
         return normalizeData
