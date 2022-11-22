@@ -1,0 +1,24 @@
+<div style="width: 100%;">
+    <form action="/login" method="post" >
+        <label>Fisrts Name</label>
+        <input type='text' name='name' id='name' required/><br>
+        <label>Last Name</label>
+        <input type='text' name='lastname' id='lastname' required/><br>
+        <label>Email</label>
+        <input type='email' name='email' id='email' required/><br>
+        <label>Age</label>
+        <input type='number' name='age'id='age' required/><br>
+
+        <label>Avatar URL</label>
+        <input type='text' name='avatar' id='avatar' required/><br>
+
+        <label>Alias</label>
+        <input type='text' name='alias' id='alias' required/><br>
+
+        <button id="send">Log In</button>
+    </form>
+
+</div>
+ 
+    <script src="/socket.io/socket.io.js"></script>    
+    <script  src="../../login.js"> </script>
