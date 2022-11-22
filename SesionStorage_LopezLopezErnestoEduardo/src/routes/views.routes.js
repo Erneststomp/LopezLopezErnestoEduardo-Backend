@@ -6,7 +6,8 @@ const router= Router();
 router.get('/', async(req,res)=>{
     
     if(req.session.user){
-        res.render('chat.handlebars')
+        let sesionUser=req.session.user
+        res.render('chat.handlebars',{userData:sesionUser})
     }else{
         res.redirect('/login');
     }
@@ -18,7 +19,8 @@ router.post('/', async(req,res)=>{
 })
 
 router.post('/logout', async(req,res)=>{
-    res.render('logout.handlebars')
+    let sesionUser=req.session.user
+    res.render('logout.handlebars',{userData:sesionUser})
     req.session.destroy()
 })
 

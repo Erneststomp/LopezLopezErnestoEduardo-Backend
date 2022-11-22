@@ -2,7 +2,7 @@
 
     <div >
         <form action="/logout" method="post" >
-            <label>Bienvenido</label>
+            <label>Bienvenido {{userData.names}}</label>
             <span id="log_user"></span>
             <button id="logout">Log Out</button>
         </form>
@@ -56,5 +56,18 @@
  
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/socket.io/socket.io.js"></script>    
-    <script  src="../../chat.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script  src="../../chat.js" async 
+  data-id="p3PkBtuA" 
+  data-name="MyUniqueName" 
+    name='{{userData.names}}'
+    alias='{{userData.alias}}'
+    lastname='{{userData.lastname}}'
+    id='{{userData.id}}'
+    avatar='{{userData.avatar}}'
+    > 
+  
+  </script>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></>

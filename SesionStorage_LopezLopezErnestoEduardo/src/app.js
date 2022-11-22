@@ -39,7 +39,7 @@ app.use(express.json());
 app.use(session({
     store: MongoStore.create({
         mongoUrl:"mongodb+srv://ernest:1234567890@cluster0.4pjly21.mongodb.net/base1?retryWrites=true&w=majority",
-        ttl:60
+        ttl:600
     }),
     secret: "nosequeponer000",
     resave:true,
