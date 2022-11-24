@@ -26,10 +26,10 @@ const socket=io(
     userEmail=me.getAttribute('id')
     console.log(userEmail)
 })();
-   
+   if(userEmail!=''){
     socket.connect();
     socket.emit('messagereq')
-    socket.emit('Charreq')
+    socket.emit('Charreq')}
 
 
 

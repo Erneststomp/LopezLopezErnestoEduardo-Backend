@@ -19,9 +19,14 @@ router.post('/', async(req,res)=>{
 })
 
 router.post('/logout', async(req,res)=>{
-    let sesionUser=req.session.user
-    res.render('logout.handlebars',{userData:sesionUser})
-    req.session.destroy()
+    if(req.session.user){
+        let sesionUser=req.session.user
+        req.session.destroy()
+        res.render('logout.handlebars',{userData:sesionUser})
+        
+    }else{
+        res.redirect('/login');
+    }    
 })
 
 
