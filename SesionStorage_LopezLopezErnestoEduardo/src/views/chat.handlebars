@@ -76,13 +76,12 @@
                          ( typeof window.performance != "undefined" && 
                               window.performance.navigation.type === 2 );
   if ( historyTraversal ) {
-    // Handle page restore.
     window.location.reload();
-  }
-});
+    }
+    });
      </script>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
+    function actualizar(){location.reload(true);}
+            setInterval("actualizar()",600000);
+    </script>
