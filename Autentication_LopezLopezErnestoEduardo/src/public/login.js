@@ -18,3 +18,8 @@ const changeregister= document.getElementById('singup')
 changeregister.addEventListener('click',evt=>{ 
     window.location.href = "/register";
 }) 
+
+const logingithub= document.getElementById('github')
+logingithub.addEventListener('click',evt=>{ 
+    window.location.href = "/github";
+}) 
