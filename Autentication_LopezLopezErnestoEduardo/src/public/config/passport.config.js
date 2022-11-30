@@ -42,7 +42,7 @@ const initializePassport=()=>{
             console.log(error)
         }
     }))
-
+  
 
     passport.use('github',new GithubStrategy({
         clientID:'Iv1.9817d55c20e6d34d',

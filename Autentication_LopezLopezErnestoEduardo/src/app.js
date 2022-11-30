@@ -11,9 +11,9 @@ import MongoStore from "connect-mongo";
 import mongoose from "mongoose";
 import initializePassport from "./public/config/passport.config.js";
 import passport from "passport";
+import flash from "express-flash";
 
 const app =express();
-
 
 const connection =mongoose.connect("mongodb+srv://ernest:1234567890@cluster0.4pjly21.mongodb.net/Users?retryWrites=true&w=majority",)
 const PORT =   process.env.PORT || 8080;
@@ -44,6 +44,8 @@ app.use(session({
     resave:true,
     saveUninitialized:false,
 }));
+
+app.use(flash());
 app.use(passport.session());
 initializePassport();
 app.use(passport.initialize());
