@@ -6,6 +6,7 @@ export const cartsController = {
   getcartList: async (req, res) => {
     try {
       const allCarts = await cartDAO.getAll()
+      console.log(allCarts)
       res.json(allCarts)
     } catch (error) {
       console.warn({class:`cartsController`,method:`getcartList: async (req, res)`,description: error})
@@ -66,6 +67,7 @@ export const cartsController = {
     try {
       
       const allCarts = await cartDAO.getAll()
+      console.log(allCarts)
       const getNewId = () => {
         let lastID = 0
         if (allCarts && allCarts.length) {
@@ -79,6 +81,7 @@ export const cartsController = {
         timestamp:Date.now(),
         products: [],
       }
+      console.log(newCart)
       await cartDAO.addItem(newCart)
       res.status(200).json({description:`new cart successfully created with id=${newCart.id}`,data:newCart})
 

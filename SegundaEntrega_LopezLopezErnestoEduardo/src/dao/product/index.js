@@ -1,6 +1,6 @@
 let productDAO
 
-switch ('json') {    
+switch ('firebase') {    
     case 'json':
         const { default: ProductDAOFileSystem } = await import('./FileSystem.js')
         productDAO = new ProductDAOFileSystem('products')

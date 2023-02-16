@@ -19,6 +19,7 @@ async getAll() {
 try {
     const querySnapshot = await this.query.get()
     const docs = querySnapshot.docs
+    console.log(docs)
     return docs
 } catch (error) {
     throw new Error(`Error getting all items: ${error}`)

@@ -7,7 +7,8 @@
 		"code": "15fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
 		"price": 123,
-		"stock": 678
+		"stock": 678,
+		"type":"grass"
 	},
 	{
 		"id": 2,
@@ -17,7 +18,8 @@
 		"code": "25fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
 		"price": 125,
-		"stock": 100
+		"stock": 100,
+		"type":"grass"
 	},
 	{
 		"id": 3,
@@ -27,7 +29,8 @@
 		"code": "35fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
 		"price": 130,
-		"stock": 67
+		"stock": 67,
+		"type":"grass"
 	},
 	{
 		"id": 4,
@@ -37,7 +40,9 @@
 		"code": "45fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
 		"price": 150,
-		"stock": 47
+		"stock": 47,
+		"type":"fire"
+		
 	},
 	{
 		"id": 5,
@@ -47,7 +52,8 @@
 		"code": "55fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
 		"price": 150,
-		"stock": 53
+		"stock": 53,
+		"type":"fire"
 	},
 	{
 		"id": 6,
@@ -57,7 +63,8 @@
 		"code": "65fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
 		"price": 375,
-		"stock": 53
+		"stock": 53,
+		"type":"fire"
 	},
 	{
 		"id": 7,
@@ -67,8 +74,9 @@
 		"code": "75fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
 		"price": 110,
-		"stock": 53
-	},
+		"stock": 53,
+		"type":"water"
+	}, 
 	{
 		"id": 8,
 		"timestamp": 1659739618951,
@@ -77,7 +85,8 @@
 		"code": "85fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
 		"price": 150,
-		"stock": 53
+		"stock": 53,
+		"type":"water"
 	},
 	{
 		"id": 9,
@@ -87,7 +96,8 @@
 		"code": "95fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
 		"price": 250,
-		"stock": 93
+		"stock": 93,
+		"type":"water"
 	},
 	{
 		"id": 10,
@@ -97,7 +107,8 @@
 		"code": "10fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
 		"price": 180,
-		"stock": 93
+		"stock": 93,
+		"type":"bug"
 	},
 	{
 		"id": 11,
@@ -107,7 +118,8 @@
 		"code": "11fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
 		"price": 180,
-		"stock": 93
+		"stock": 93,
+		"type":"bug"
 	},
 	{
 		"id": 12,
@@ -117,6 +129,7 @@
 		"code": "12fa3dd3-7c95-4e7f-a90f-ba3a32e3473d",
 		"thumbnail": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
 		"price": 180,
-		"stock": 93
+		"stock": 93,
+		"type":"bug"
 	}
 ]

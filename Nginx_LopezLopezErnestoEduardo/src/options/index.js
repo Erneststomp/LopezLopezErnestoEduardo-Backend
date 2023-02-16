@@ -15,7 +15,6 @@ switch ('firebase') {
     case 'firebase':
         const { default: CartDAOFirebase } = await import('./Firebase.js')
         cartDAO = new CartDAOFirebase()
-        console.log(cartDAO)
         console.log('Set Firebase as Database for Carts!')
         break
     default:
@@ -26,4 +25,4 @@ switch ('firebase') {
         break
 }
 
-export { cartDAO }
+export default { cartDAO }
